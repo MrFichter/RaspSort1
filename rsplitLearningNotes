@@ -1,0 +1,21 @@
+
+test = 'hello my name is simon'
+
+test.rsplit() #Will return a list of each word.
+
+
+test = 'hello-my-name-is-simon'
+
+test.rsplit('-') #Will return a list of each word.
+
+test.rsplit('-',1) #Will split the string only between 'is' and 'simon.'
+
+test.rsplit('-',2) #Will keep 'hello my name' together and will make 'is' \
+#and 'simon' separate strings.
+
+test.rsplit('-')[0] #Will return the zeroth element of the output list. 
+
+
+
+
+

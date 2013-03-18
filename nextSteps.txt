@@ -1,0 +1,6 @@
+Page 74 of the guide shows how to make the list searchable by users.
+
+If I want to do more investigating before I go there, I could go to
+wiki.python.org/moin/HowTo/Sorting and could move to the seciton about 
+complex sorts. (I might need to read about what attrgetter and itemgetter
+are first, though.) Then I could try sorting by two keys.

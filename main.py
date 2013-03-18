@@ -12,10 +12,18 @@ def filmYear(film):
 with open ("filmList.txt", "r") as file:
 	filmList = file.read().splitlines() 
 
-#sort by name using library function
+#sort by name using library function 
+##Me: This is one way to sort.
 filmList.sort()
 
-print filmList
-##my test
-##You skipped typing some stuff
+#sort by year using key to library function - the film list 
+#must end with a year in the format (NNNN)
+filmList.sort(key=filmYear)
+##Me: This is another way to sort.
+##'key =' expects a function. Many times, people use lambda
+##notation to quickly create a function. The function is called
+##'exactly once for each input record.' wiki.python.org/moin/HowTo/Sorting
+##More on lambda notation: htt://tinyurl.com/pylambda
 
+for film in filmList:
+	print (film)

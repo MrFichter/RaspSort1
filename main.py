@@ -9,9 +9,13 @@ def filmYear(film):
 	
 #load the file into a list in Python memory
 #and then close the file because the content is now in memory
-with open ("filmlist.txt", "r") as file:
-	filmlist = file.read().splitlines() 
+with open ("filmList.txt", "r") as file:
+	filmList = file.read().splitlines() 
 
+#sort by name using library function
+filmList.sort()
+
+print filmList
+##my test
 ##You skipped typing some stuff
 
-print filmlist ##My test.

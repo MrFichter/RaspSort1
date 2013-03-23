@@ -19,7 +19,14 @@ better at working with objects and classes.
 I could use the Mike Dawson book as good background material. 
 
 I will need a refresher on what __repr__(self): is all about. 
+
+Update: I think it's a way of getting an object to return a string version 
+of all of its attributes.
+
 Also, in the example on the how-to-sorting page, what's the deal with
 the list student_objects[]? Is it standard procedure to create a list 
 containing all of the objects in a class, or it is only useful in this
 situation?
+
+Update: I think this situation calls for turning all of the objects into
+a list so that you can work on them with itemgetter and attrgetter?

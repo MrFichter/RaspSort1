@@ -1,32 +1,8 @@
 Page 74 of the guide shows how to make the list searchable by users.
 
-If I want to do more investigating before I go there, I could go to
-wiki.python.org/moin/HowTo/Sorting and could move to the section about 
-complex sorts. (I might need to read about what attrgetter and itemgetter
-are first, though.) Then I could try sorting by two keys.
+Before I do that page, though, I'll try using a regular expression to get rid
+of the "The" in the titles. I'll also change my for loop into list
+comprehension, which @fichtitious says is more memory efficient.
 
-Actually, I read more on the page above and realized that I also need to
-look above, in the section about key functions, where they create a class
-Student and give each object in the class properties like name, grade, 
-and age--properties they will use for sorting a few lines later. I also
-read about attrgetter (a function that returns attributes of an object) and
-itemgetter (a function that returns items in a list, for example).
-
-Figuring out how to do a complex sort sounds like an especially good next
-step now because it would be useful in itself and would help me to get 
-better at working with objects and classes. 
-
-I could use the Mike Dawson book as good background material. 
-
-I will need a refresher on what __repr__(self): is all about. 
-
-Update: I think it's a way of getting an object to return a string version 
-of all of its attributes.
-
-Also, in the example on the how-to-sorting page, what's the deal with
-the list student_objects[]? Is it standard procedure to create a list 
-containing all of the objects in a class, or it is only useful in this
-situation?
-
-Update: I think this situation calls for turning all of the objects into
-a list so that you can work on them with itemgetter and attrgetter?
+The last time I used a regular expression to get rid of something, I used
+re.sub. Would that be appropriate here?

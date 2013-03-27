@@ -11,7 +11,7 @@ class Name (object):
 		self.last = last
 
 	def __repr__(self):
-		return self.first + ' ' + self.last
+		return '{0} {1}'.format(self.first, self.last)
 
 nameObjectList = [Name (*fullName.rsplit() ) for fullName in names ]
 

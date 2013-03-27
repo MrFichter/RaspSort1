@@ -13,30 +13,9 @@ class Name (object):
 	def __repr__(self):
 		return self.first + ' ' + self.last
 
-
-nameObjectList = []
-
-
-nameObjectList.append ( [Name (*fullName.rsplit() ) for fullName in names ] )
-
-
-for nameObject in nameObjectList: print nameObject
-
-
-
-#The reason I'm using a class is because I want, eventually, to do this:
+nameObjectList = [Name (*fullName.rsplit() ) for fullName in names ]
 
 nameObjectList.sort (key = lambda nameObject: nameObject.first)
-#nameObjectList.sort (key = lambda nameObject: nameObject.last)
-#for nameObject in nameObjectList: print nameObject
+nameObjectList.sort (key = lambda nameObject: nameObject.last)
+for nameObject in nameObjectList: print nameObject
 
-#error message I get:
-
-'''
-Traceback (most recent call last):
-  File "simpleSort.py", line 29, in <module>
-    nameObjectList.sort (key = lambda nameObject: nameObject.first)
-  File "simpleSort.py", line 29, in <lambda>
-    nameObjectList.sort (key = lambda nameObject: nameObject.first)
-AttributeError: 'list' object has no attribute 'first'
-'''

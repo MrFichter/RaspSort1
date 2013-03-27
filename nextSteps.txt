@@ -2,7 +2,8 @@ Page 74 of the guide shows how to make the list searchable by users.
 
 Before I do that page, though, I'll try using a regular expression to get rid
 of the "The" in the titles. I'll also change my for loop into list
-comprehension, which @fichtitious says is more memory efficient.
+comprehension, which @fichtitious says is more memory efficient. Right now, my
+experiments with simpleSort.py have gotten list comprehension to work.
 
 The last time I used a regular expression to get rid of something, I used
 re.sub. Would that be appropriate here?
